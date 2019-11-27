@@ -5,7 +5,7 @@
 	fission fn create --name node-add-get --env node --code node-add-get.js
 	fission route create --url /node-add-get --function node-add-get --method GET --createingress
 ### test get
-  curl -X GET \
+	curl -X GET \
 	  'https://fission.lingkcore.com/node-add-get?number1=10&number2=10' 
 ## create get function & route
 	fission fn create --name node-add-post --env node --code node-add-post.js

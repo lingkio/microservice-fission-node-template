@@ -5,9 +5,10 @@ module.exports = async function (context) {
     var query = url_parts.query;
     var n1 = parseInt(query.number1);
     var n2 = parseInt(query.number2);
+    var result = { "result": n1 + n2 };
     return {
         status: 200,
-        body: "total : " + JSON.stringify(n1 + n2)
+        body: result
     }
 }
 

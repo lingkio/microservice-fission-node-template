@@ -11,7 +11,7 @@
 	fission fn create --name node-add-post --env node --code node-add-post.js
 	fission route create --url /node-add-post --function node-add-post --method POST --createingress
 ### test post
-	curl -sX POST \
+	curl -X POST \
 	  https://fission.lingkcore.com/node-add-post \
 	  -H 'Content-Type: application/json' \
 	  -d '{

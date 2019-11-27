@@ -7,4 +7,4 @@ fission route create --url /node-add-get --function node-add-get --method GET --
 
 fission fn delete --name node-add-post
 fission fn create --name node-add-post --env node --code node-add-post.js
-fission route create --url /node-add-post --function node-add-post --method GET --createingress
+fission route create --url /node-add-post --function node-add-post --method POST --createingress

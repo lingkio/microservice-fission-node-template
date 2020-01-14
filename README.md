@@ -14,7 +14,7 @@ This recipe demonstrates a simple GET/POST API using the Lingk FaaS (powered by 
 	fission fn create --name node-add-get --env node --code node-add-get.js
 	fission route create --url /node-add-get --function node-add-get --method GET --createingress
 	
-### Test get
+### Test GET
 	curl -X GET \
 	  'https://fission.lingkcore.com/node-add-get?number1=10&number2=10' 
 	  
@@ -22,7 +22,7 @@ This recipe demonstrates a simple GET/POST API using the Lingk FaaS (powered by 
 	fission fn create --name node-add-post --env node --code node-add-post.js
 	fission route create --url /node-add-post --function node-add-post --method POST --createingress
 	
-### Test post
+### Test POST
 	curl -X POST \
 	  https://fission.lingkcore.com/node-add-post \
 	  -H 'Content-Type: application/json' \

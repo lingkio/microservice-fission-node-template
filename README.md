@@ -1,4 +1,4 @@
-# microservice-fission-node-template
+# Microservice Fission Node Template
 
 This recipe demonstrates a simple GET/POST API using the Lingk FaaS (powered by Fission) for NodeJS services.
 

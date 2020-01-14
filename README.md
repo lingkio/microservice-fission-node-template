@@ -1,15 +1,27 @@
 # microservice-fission-node-template
+
+This recipe demonstrates a simple GET/POST API using the Lingk FaaS (powered by Fission) for NodeJS services.
+
+## connect to your Lingk account
+	lingk lc env=dev region=us-east-1
+
+## login to your account using the device code flow
+
 ## create fission env
 	fission env create --name node --image fission/node-env
+	
 ## create get function & route
 	fission fn create --name node-add-get --env node --code node-add-get.js
 	fission route create --url /node-add-get --function node-add-get --method GET --createingress
+	
 ### test get
 	curl -X GET \
 	  'https://fission.lingkcore.com/node-add-get?number1=10&number2=10' 
+	  
 ## create get function & route
 	fission fn create --name node-add-post --env node --code node-add-post.js
 	fission route create --url /node-add-post --function node-add-post --method POST --createingress
+	
 ### test post
 	curl -X POST \
 	  https://fission.lingkcore.com/node-add-post \

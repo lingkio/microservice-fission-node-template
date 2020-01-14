@@ -7,7 +7,9 @@ This recipe demonstrates a simple GET/POST API using the Lingk FaaS (powered by 
 
 ## Login to your account using the device code flow
 
-## Create fission env
+Copy the link to your browser and login to authenticate to Fission automatically
+
+## Create Fission env (optional)
 	fission env create --name node --image fission/node-env
 	
 ## Create get function & route
